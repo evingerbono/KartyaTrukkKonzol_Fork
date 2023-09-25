@@ -17,14 +17,15 @@ public class KartyaTrukk {
         return oszlop;
     }
 
-    private void indit() {
-        Pakli p1 = new Pakli();
-        p1.feltolt();
+    public void indit() {
+
+        Pakli Pakli = new Pakli();
+        Pakli.feltolt();
         for (int i = 0; i < 3; i++) {
-            p1.kirak();
+            Pakli.kirak();
             int oszlop = melyik();
-            p1.kever(oszlop);
+            Pakli.kever(oszlop);
         }
-        p1.ezVolt();
+        Pakli.ezVolt();
     }
 }
