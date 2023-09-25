@@ -17,7 +17,7 @@ public class KartyaTrukk {
         return oszlop;
     }
 
-    private void indit() {
+    public void indit() {
         Pakli p1 = new Pakli();
         p1.feltolt();
         for (int i = 0; i < 3; i++) {
