@@ -9,7 +9,7 @@ public class Lap {
     }
 
     public String Lap() {
-        return "";
+        return leiras;
     }
 
 }
