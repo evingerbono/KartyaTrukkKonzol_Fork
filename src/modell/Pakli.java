@@ -1,8 +1,12 @@
-package kartyatrukkkonzolon;
+package modell;
 
 public class Pakli {
 
     String[] pakli = new String[22];
+
+    public String[] getPakli() {
+        return pakli;
+    }
 
     public void feltolt() {
         String[] szinek = {"P", "T", "Z", "M"};
@@ -14,15 +18,6 @@ public class Pakli {
             }
         }
 
-    }
-
-    public void kirak() {
-        for (int i = 1; i < pakli.length; i++) {
-            System.out.printf("%-8s", pakli[i]);
-            if (i % 3 == 0) {
-                System.out.println("");
-            }
-        }
     }
 
     public void kever(int oszlop) {
@@ -54,8 +49,8 @@ public class Pakli {
         pakli = ujPakli;
     }
 
-    public void ezVolt() {
-        System.out.println("A választott lap: " + pakli[11]);
+    public String ezVolt() {
+        return pakli[11];
     }
 
 }
