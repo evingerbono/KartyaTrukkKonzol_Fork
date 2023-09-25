@@ -6,4 +6,5 @@ public class KartyaTrukkKonzolon {
         KartyaTrukk KartyaTrukk = new KartyaTrukk();
         KartyaTrukk.indit();
     }
+    //git commit --amend --no edit
 }
